@@ -1,2 +1,2 @@
-# graphical-site
+# Phoneix-Designer
 project for teamwork
