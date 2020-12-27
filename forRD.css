@@ -1,0 +1,12 @@
+#logoFor{
+    width: 100px;
+    height: 100px;
+}
+.content p,.content ul{
+    direction: rtl;
+}
+@media screen and (max-width: 600px){
+    #forQD{
+         padding:10px;
+    }
+}
