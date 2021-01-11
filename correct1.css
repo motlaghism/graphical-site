@@ -1,0 +1,6 @@
+#mainav ul li a,
+#mainav ul li ul li a
+{
+    box-sizing: border-box;
+    border-bottom:#95103B 2px solid;    
+}

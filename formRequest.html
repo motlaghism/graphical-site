@@ -3,7 +3,7 @@
 <html>
 
     <head>
-        <title>برای طراحان</title>
+        <title>فرم درخواست طرح</title>
         <meta charset="utf-8">
         <link rel="icon" href="../images/demo/Logobar.png"  type="image/icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <link href="../layout/styles/topMenu.css" rel="stylesheet" type="text/css" >
         <link href="../layout/styles/forRD.css" rel="stylesheet" type="text/css" >
+        <link href="../layout/styles/FormReqToDes.css" rel="stylesheet" type="text/css" >
+        <script src="../layout/scripts/Requester.js"></script>
         <script src="../layout/scripts/popUpLogin.js"></script>
         <script src="../layout/scripts/pagination.js"></script>
         <script src="../layout/scripts/popUpRequest.js"></script>
@@ -38,7 +40,6 @@
         <!-- ################################################################################################ -->
         <div  class="wrapper row1">
             <section  class="hoc clear">
-
                 <!-- ################################################################################################ -->
                 <nav id="mainav">   
 
@@ -68,7 +69,7 @@
                     </ul>
                 </nav>
                 <div class="topnav" id="myTopnav" >
-                    <a  class="icon" onclick="myFunction()">
+                    <a  class="icon"  onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
                     <a href="#" style="text-align: left;">خانه/طراح:فلان/کارفرما:فلان</a>
@@ -87,70 +88,70 @@
                     <a href="../pages/appSamples.php">طراحی وب و اپلیکیشن</a>
                 </div>
             </section>
-
         </div>
-        <div class="wrapper bgded overlay" style="background-image:url('../images/demo/backgrounds/01.png');">
+        <div class="wrapper bgded overlay" style="background-image:url('../images/demo/thePHOENIX5.png');">
             <div id="breadcrumb" class="hoc clear">
                 <!-- ################################################################################################ -->
-                <h6 class="heading">برای طراحان</h6>
+                <h6 class="heading">فرم درخواست طرح</h6>
                 <ul>
-                    <li><a href="#">برای طراحان</a></li>
-                    <li><a href="#">چطور کار میکنه؟</a></li>
+                    <li><a href="#">فرم درخواست طرح</a></li>
                     <li><a href="#">خانه</a></li>
                 </ul>
-                <!-- ################################################################################################ -->
             </div>
         </div>
         <!-- ################################################################################################ -->
         <!-- ################################################################################################ -->
         <!-- ################################################################################################ -->
         <div class="wrapper row3">
+            <div id="dashboard" class="hoc" >
+                <ul>
+                    <li >
+                        <a href="#formReqToDes">فرم درخواست طرح</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
             <main class="hoc container clear">
-                <!-- main body -->
-                <!-- ################################################################################################ -->
-                <div class="content" id="forQD">
-                    <!-- ################################################################################################ -->
-                    <img id="logoFor" class="imgr borderedbox inspace-5" src="../images/demo/thePHOENIX5.png" alt="">
-                    <h1>: سخنی با طراحان</h1>
-                    <p>
-                        سلام و خوش آمد گویی خدمت طراحان عزیز ققنوس
-                        خیلی خوشحالیم که شانس همکاری با شما رو داریم.
-                    </p>
-                    <br/>
-                    <h3>
-                        چطوری میتونید عضوی از خانواده ققنوس باشید؟!؟
-                    </h3>
-                    <p>
-                        اینکار خیلی راحت تر از اون چیزیه که فکرشو میکنید.
+                <div id="formReqToDes" >
+                    <form action="#">
+                        <fieldset >
+                            <legend>فرم درخواست طرح</legend>
+                            <label>عنوان</label>
+                            <input type="text" placeholder="عنوان را وارد نمایید"/>
+                            <label>حوزه کاری</label>
+                            <select>
+                                <option>طراحی پوستر</option>
+                                <option>طراحی لوگو</option>
+                                <option>طراحی بنر</option>
+                                <option>دیجیتال پینت</option>
+                                <option>طراحی کاراکتر</option>
+                                <option>طراحی وب و اپلیکیشن</option>
+                            </select>
+                            <label>تاریخ</label>
+                            <div style="display: flex; flex-direction: row;">
+                                <label>روز</label>
+                                <select>
+                                    <option>1</option>
+                                </select>
+                                <label>ماه</label>
+                                <select>
+                                    <option>مهر</option>
+                                </select>
+                                <label>سال</label>
+                                <select>
 
-                        طبیعتا اولین قدم عضویت توی سایت یا ورود به حساب کاربریتونه :
-                    </p>
-                    <p>
-                        <button onclick="popUp()" class="btn">بیا ببرمت ثبت نام</button>
-                    </p>
-                    <p>
-                        بعد از اون از طریق بخش همکاری با ققنوس در پنل کاربری خودتون میتونید فرم درخواست همکاری رو پر کنید.
-                        کار سختی نیست 
-                        صرفا یه سری اطلاعات تکمیلی درمورد خودتون ،تواناییاتون و حوزه کاری مورد نظرتون رو وارد میکنید و چند تا از نمونه کارهای قبلیتون رو هم آپلود میکنید .
-                        بعد از تکمیل فرم ، درخواست شما توسط مدیران سایت بررسی میشه و در صورت تایید ، به جمع طراحان گروه ققنوس دیزاینر اضافه میشین.
-                    </p>
-                    <h3>
-                        حالا چطوری باید سفارش بگیرین؟!؟
-                    </h3>
-                    <p>
-                        خیلی راحت
-                        بعد از اضافه شدن به جمع طراحان ققنوس ، بخشی با عنوان "سفارش های آزاد" به پنل کاربری شما اضافه میشه که توی اون میتونین سفارش های آزاد فعال نوی حوزه های کاری خودتون رو ببینین و از بین اونا یکی رو انتخاب کنید.
-                    </p>
-                    <p>
-                        بعد از انتخاب سفارش ، وارد مرحله مذاکره با کارفرمای مربوطه میشید، توی این مرحله در مورد جزییات سفارش مثل زمان انجام ، قیمت و خود طرح مورد نظر مذاکره میکنید. اگه با کارفرما به توافق برسین و هر دو طرف جزییات رو تایید کنید ، کار سفارش شروع میشه ، در غیر اینصورت سفارش به لیست آزاد برمیگرده و شما هم میتونین یه سفارش دیگه رو انتخاب کنین.
-                    </p>
-                    حالا ما فرض میکنیم شما به توافق رسیدین و کار شروع شده
-                    بعد از اتمام کار ، شما طرح رو توی سایت بارگذاری میکنید و کارفرما پیش نمایش اون رو میبینه ، اگه از طرح راضی بود و نیازی به تغییرات بیشتر نبود ، کارفرما هزینه کار رو واریز میکنه و قابلیت دریافت طرح براش فعال میشه و شما هم دستمزد خودتون رو دریافت میکنید.
-                    بعد از این هم میتونید برید سراغ سفارش بعدیتون.
-
-                    <!-- ################################################################################################ -->
+                                    <option>1400</option>
+                                </select>
+                            </div>
+                            <label>فایل های الحاقی</label>
+                            <input type="file" multiple />
+                            <label>متن توضیح شما</label>
+                            <textarea ></textarea>
+                            <input type="submit" class="btn" value="ارسال">
+                        </fieldset>
+                    </form>
                 </div>
-            </main>
+            </main>     <!-- ################################################################################################ -->
         </div>
         <div class="wrapper row4">
             <footer id="footer" class="hoc clear">
@@ -205,76 +206,6 @@
                 <!-- ################################################################################################ -->
             </footer>
         </div>
-        <div id="maskDiv">
-            <div id="login-signup" class="login-wrap">
-                <div class="login-html">
-                    <a class="close" onclick="closePopUp()">+</a>
-                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">ورود</label>
-                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">ثبت نام</label>
-                    <div class="login-form">
-                        <div class="sign-in-htm">
-                            <form method="post" action="#">
-                                <div class="group">
-
-                                    <input id="user" type="text" name="username" class="input" placeholder="نام کاربری">
-                                </div>
-                                <div class="group">
-
-                                    <input id="pass" type="password"  name="password" class="input" data-type="password" placeholder="رمز عبور">
-                                </div>
-                                <div class="group">
-                                    <input id="check" type="checkbox" class="check" checked>
-                                    <label for="check"><span class="icon"></span> میخوای یادم بمونی؟</label>
-                                </div>
-                                <div class="group">
-                                    <input type="submit"  name="submit" class="button" value="ورود">
-                                </div>
-                                <div class="hr"></div>
-                                <div class="foot-lnk">
-                                    <a href="#forgot">کلمه عبورت رو فراموش کردی؟</a>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="sign-up-htm">
-                            <form method="post" action="#">
-                                <div class="group">
-
-                                    <input id="user" type="text"  name="username" class="input" placeholder="نام کاربری">
-                                </div>
-
-                                <div class="group">
-
-                                    <input id="pass" type="password"  name="password" class="input" data-type="password" placeholder="رمز عبور">
-                                </div>
-                                <div class="group">
-
-                                    <input id="pass" type="password"  name="check_password" class="input" data-type="password" placeholder="تکرار رمز عبور">
-                                </div>
-                                <div class="group">
-
-                                    <input id="pass" type="text"  name="email" class="input" placeholder="ایمیل">
-                                </div>
-                                <div class="group">
-
-                                    <input id="user" type="text"  name="name" class="input" placeholder="نام و نام خانوادگی">
-                                </div>
-                                <div class="group">
-
-                                    <input id="user" type="text"  name="phone" class="input" placeholder="شماره تماس">
-                                </div>
-                                <div class="group">
-                                    <input type="submit" class="button" name="submit" value="ثبت نام">
-                                </div>
-                                <div class="hr"></div>
-                                <div class="foot-lnk">
-                                    <label for="tab-1">قبلا عضو شدی؟</label>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  
         <!--################################################################################ request-->
     </body>
 </html>

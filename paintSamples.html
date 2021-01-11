@@ -1,11 +1,18 @@
 
+<?php
+session_start();
+require_once "insertdata_panel.php";
+require_once "config_panel.php" ;
+?>
+
 <!DOCTYPE html>
+
 <html>
 
     <head>
-        <title>برای کارفرمایان</title>
+        <title>طراجی نقاشی دیجیتال</title>
         <meta charset="utf-8">
-        <link rel="icon" href="../images/demo/Logobar.png"  type="image/icon">
+         <link rel="icon" href="../images/demo/Logobar.png"  type="image/icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
         <link href="../layout/styles/popUpLogin.css" rel="stylesheet" type="text/css" >
@@ -13,13 +20,13 @@
         <link href="../layout/styles/correct1.css" rel="stylesheet" type="text/css" media="all">
         <link href="../layout/styles/footerSamples.css" rel="stylesheet" type="text/css" >
         <link href="../layout/styles/Samples.css" rel="stylesheet" type="text/css" >
-        <link href="../layout/styles/pagination.css" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <link href="../layout/styles/topMenu.css" rel="stylesheet" type="text/css" >
-        <link href="../layout/styles/forRD.css" rel="stylesheet" type="text/css" >
-        <script src="../layout/scripts/popUpLogin.js"></script>
+        <link href="../layout/styles/pagination.css" rel="stylesheet" type="text/css" >
         <script src="../layout/scripts/pagination.js"></script>
+        <link href="../layout/styles/topMenu.css" rel="stylesheet" type="text/css" >
+        <script src="../layout/scripts/popUpLogin.js"></script>
         <script src="../layout/scripts/popUpRequest.js"></script>
+
         <script>
             function myFunction() {
                 var x = document.getElementById("myTopnav");
@@ -65,7 +72,6 @@
                         </li>
                         <!-- <li><a href="javascript:popUp()" onclick="popUp()">ورود/ثبت نام</a></li>-->
                         <li><a href="../index.php">خانه/طراح:فلان/کارفرما:فلان</a></li>
-
                     </ul>
                 </nav>
                 <div class="topnav" id="myTopnav" >
@@ -90,75 +96,39 @@
             </section>
 
         </div>
+
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
         <div class="wrapper bgded overlay" style="background-image:url('../images/demo/backgrounds/01.png');">
             <div id="breadcrumb" class="hoc clear">
                 <!-- ################################################################################################ -->
-                <h6 class="heading">برای کارفرمایان</h6>
+                <h6 class="heading">طراحی نقاشی دیجیتال</h6>
                 <ul>
-                    <li><a href="#">برای کارفرمایان</a></li>
-                    <li><a href="#">چطور کار میکنه؟</a></li>
+                    <li><a href="#">طراحی نقاشی دیجیتال</a></li>
+                    <li><a href="#">دسته بندی ها</a></li>
                     <li><a href="#">خانه</a></li>
                 </ul>
                 <!-- ################################################################################################ -->
             </div>
         </div>
-        <!-- ################################################################################################ -->
-        <!-- ################################################################################################ -->
-        <!-- ################################################################################################ -->
-        <div class="wrapper row3">
-            <main class="hoc container clear">
-                <!-- main body -->
-                <!-- ################################################################################################ -->
-                <div class="content" id="forQD">
-                    <!-- ################################################################################################ -->
-                    <img id="logoFor" class="imgr borderedbox inspace-5" src="../images/demo/thePHOENIX5White.png" alt="">
-                    <h1>: سخنی با کارفرمایان</h1>
-                    <p>
-                        سلامی گرم خدمت کارفرمایان عزیز ققنوس
-                        قبل از هر چیز از اینکه برای ثبت سفارش گرافیکی خودتون سایت ما رو انتخاب کردین از شما سپاس گذاریم.
-                    </p>
-                    <br>
-                    <p  >    اینجا توی گروه گرافیکی ققنوس تمام سعی و تلاش ما بر اینه که تمام سفارش های شما رو به بهترین شکل و در کوتاه ترین زمان ممکن انجام بدیم.
-                        شما اینجا میتونید به راحتی از بین  دسته بندی خدمات ارائه شده توسط گروه ما یعنی:
-                    </p>
-                    <ul>
-                        <li>طراحی پوستر</li>
-                        <li>طراحی لوگو</li>
-                        <li>طراحی بنر</li>
-                        <li>دیجیتال پینت</li>
-                        <li>طراحی کاراکتر</li>
-                        <li>طراحی وب و اپلیکیشن</li>
-                    </ul>
-                    <p>
-                        انتخاب کرده و سفارش خودتون رو به دست طراحان حرفه‌ای و کاربلد ما بسپرید.
-                    </p>
-
-                    <h3> حالا چطوری میتونید سفارش خودتون رو ثبت کنید؟</h3>
-                    <p>
-                        برای شروع ، باید توی سایت ما ثبت نام کنید یا وارد حساب فعلیتون بشین.
-                    </p>
-                    <p>
-                        <button class="btn" onclick="popUp()" >بیا ببرمت ثبت نام</button>
-                    </p>
-                    <p>
-                        بعد از اون از طریق پنل کاربری خودتون میتونید فرم ثبت سفارش رو پر کنید .اینجا میتونید جزییات مورد نظرتون مثل بودجه ، زمان و جزییات مدنظرتون رو مشخص کنین. 
-                        همونطور که حتما متوجه شدین توی سایت نمونه کارهای زیادی رو از طراح های مختلف قرار دادیم.
-                    </p>
-                    <p>
-                        اگه دوست داشته باشین که طرحتون از روی یکی از همین نمونه کارها طراحی بشه میتونید کد مربوط به اون نمونه کار رو توی فرم ثبت سفارش وارد کنید یا نمونه کار مورد نظرتون رو توی سایت بارگذاری کنید.
-                        بعد از تکمیل فرم و درصورت تایید مدیران سایت، سفارش شما به لیست سفارش های آزاد اضافه میشه و در معرض دید طراحان اون حوزه قرار میگیره.
-                    </p>
-                    <p>
-                        بعد از اینکه یک طراح سفارش شما رو انتخاب کنه ، وارد مرحله مذاکره میشید. یعنی اینکه جزییات سفارش رو با هم بررسی میکنین تا زمانی که به توافق برسین. حالا اگه این اتفاق نیفتاد و قصد قطع مذاکره رو داشتین ، سفارش شما به لیست سفارش های آزاد برمیگرده و دوباره منتظر طراح بعدی میمونید. ولی اگه با طراح به توافق رسیدین وارد مرحله انجام پروژه میشید.
-                        بعد از اتمام پروژه هم ، به محض تایید طراح توسط شما و پرداخت هزینه سفارش ، طرح تحویل شما داده میشه و طراح هم حق‌الزحمه خودش رو دریافت میکنه.
-                    </p>
-                    <p>
-                        امیدوارم این مطلب برای شما مفید بوده باشه.
-                    </p>
+        <div id="mainSample" >
+            <div id="samples">
+                <div class='sample'>
+                    <a class="linkImgSample imgover" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
 
                 </div>
-                <!-- ################################################################################################ -->
-            </main>
+            </div>
+            <div>
+                <nav class="pagination">
+                    <button class="pageButton" id="previous" onclick="previousPage()" ><a href="#">&laquo قبلی</a></button>
+                    <ul id="ulPage">
+
+                    </ul>
+                    <button class="pageButton" id="next" onclick="nextPage()"><a href="#">بعدی&raquo</a></button>
+                </nav>
+            </div>
         </div>
         <div class="wrapper row4">
             <footer id="footer" class="hoc clear">
@@ -205,8 +175,8 @@
                         <fieldset>
                             <legend>پیام به ما</legend>
                             <input class="btmspace-15" type="text"  name="text" value="" placeholder="پیام کوتاه">
-                            <input class="btmspace-15" type="text" name="e_mail" value="" placeholder="ایمیل">
-                            <button type="submit" name="submit" value="submit">ارسال</button>
+                            <input class="btmspace-15" type="text"  name="e_mail" value="" placeholder="ایمیل">
+                            <button type="submit"  name="send" value="submit">ارسال</button>
                         </fieldset>
                     </form>
                 </div>
@@ -221,56 +191,69 @@
                     <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">ثبت نام</label>
                     <div class="login-form">
                         <div class="sign-in-htm">
-                            <div class="group">
-                                <input id="user" type="text" placeholder="نام کاربری" class="input">
-                            </div>
-                            <div class="group">
-                                <input id="pass" type="password" class="input" placeholder="کلمه عبور" data-type="password">
-                            </div>
-                            <div class="group">
-                                <input id="check" type="checkbox" class="check" checked>
-                                <label for="check"><span class="icon"></span> میخوای یادم بمونی؟</label>
-                            </div>
-                            <div class="group">
-                                <input type="submit" class="button" value="ورود">
-                            </div>
-                            <div class="hr"></div>
-                            <div class="foot-lnk">
-                                <a href="#forgot">کلمه عبورت رو فراموش کردی؟</a>
-                            </div>
+                            <form method="post" action="#">
+                                <div class="group">
+
+                                    <input id="user" type="text" name="username" class="input" placeholder="نام کاربری">
+                                </div>
+                                <div class="group">
+
+                                    <input id="pass" type="password"  name="password" class="input" data-type="password" placeholder="رمز عبور">
+                                </div>
+                                <div class="group">
+                                    <input id="check" type="checkbox" class="check" checked>
+                                    <label for="check"><span class="icon"></span> میخوای یادم بمونی؟</label>
+                                </div>
+                                <div class="group">
+                                    <input type="submit"  name="submit" class="button" value="ورود">
+                                </div>
+                                <div class="hr"></div>
+                                <div class="foot-lnk">
+                                    <a href="#forgot">کلمه عبورت رو فراموش کردی؟</a>
+                                </div>
+                            </form>
                         </div>
                         <div class="sign-up-htm">
-                            <div class="group">
-                                <input id="user" type="text" class="input" placeholder="نام کاربری">
-                            </div>
-                            <div class="group">
-                                <label for="pass" class="label"></label>
-                                <input id="pass" type="password" class="input" data-type="password" placeholder="کلمه عبور">
-                            </div>
-                            <div class="group">
-                                <input id="pass" type="password" class="input" data-type="password" placeholder="تکرار کلمه عبور">
-                            </div>
-                            <div class="group">
-                                <input id="pass" type="text" class="input" placeholder="آدرس ایمیل">
-                            </div>
-                            <div class="group">
-                                <input id="user" type="text" class="input" placeholder="نام خانوادگی">
-                            </div>
-                            <div class="group">
-                                <input id="user" type="text" class="input" placeholder="شماره تماس">
-                            </div>
-                            <div class="group">
-                                <input type="submit" class="button" value="ثبت نام">
-                            </div>
-                            <div class="hr"></div>
-                            <div class="foot-lnk">
-                                <label for="tab-1" id="otherTab">قبلا عضو شدی؟    
-                            </div>
+                            <form method="post" action="#">
+                                <div class="group">
+
+                                    <input id="user" type="text"  name="username" class="input" placeholder="نام کاربری">
+                                </div>
+
+                                <div class="group">
+
+                                    <input id="pass" type="password"  name="password" class="input" data-type="password" placeholder="رمز عبور">
+                                </div>
+                                <div class="group">
+
+                                    <input id="pass" type="password"  name="check_password" class="input" data-type="password" placeholder="تکرار رمز عبور">
+                                </div>
+                                <div class="group">
+
+                                    <input id="pass" type="text"  name="email" class="input" placeholder="ایمیل">
+                                </div>
+                                <div class="group">
+
+                                    <input id="user" type="text"  name="name" class="input" placeholder="نام و نام خانوادگی">
+                                </div>
+                                <div class="group">
+
+                                    <input id="user" type="text"  name="phone" class="input" placeholder="شماره تماس">
+                                </div>
+                                <div class="group">
+                                    <input type="submit" class="button" name="submit" value="ثبت نام">
+                                </div>
+                                <div class="hr"></div>
+                                <div class="foot-lnk">
+                                    <label for="tab-1">قبلا عضو شدی؟</label>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <!--################################################################################ request-->
         <div id="maskReq">
             <div id="requestPopUp">
@@ -288,7 +271,7 @@
                         <textarea class="focusInput"  name="explain" rows="15" cols="40"></textarea>
                         <label>فایل های الحاقی</label>
                         <input class="focusInput"  name="file" type="file" multiple >
-                        <input class="focusInput"  name="submit" type="submit" value="ارسال">
+                        <input class="focusInput"  name="insert" type="submit" value="ارسال">
                     </fieldset>
                 </form>
             </div>

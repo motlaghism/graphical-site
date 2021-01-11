@@ -1,0 +1,89 @@
+#dashboard{
+    margin:50px;
+}
+#dashboard ul {
+    display: block;
+}
+#dashboard ul li a{
+    color:inherit;
+}
+#dashboard ul li{
+    padding: 10px;
+    border: 1px solid gray;
+    display: inline-block;
+}
+#dashboard ul li:hover{
+    cursor: pointer;
+    color:white;
+    background-color:#90103B; 
+}
+#status{
+    display: flex;
+    flex-wrap: wrap;
+}
+#status div{
+    background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.7)), url("../..//images/demo/backgrounds/001.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 20px;
+    border:solid 1px grey;
+    height: 200px;
+    width: 200px;
+    min-width: 200px;
+    margin: 20px;
+    flex:  18%;
+
+}
+#status div h4{
+    font-size: 15px;
+    padding-top: 30px;
+    margin: auto auto;
+}
+#status div:hover{
+    color: #90103B;
+}
+#changeStatus form fieldset{
+    flex-wrap: wrap;
+    display: flex;
+}
+#changeStatus form fieldset input{
+    flex: 0 0 50%;
+    width:300px;
+    height: 50px;
+    padding: 10px;
+}
+#changeStatus form fieldset input[type="submit"]{
+    flex: 0 0 100%;
+}
+#changeStatus{
+    display: none;
+    direction: rtl;
+}
+@media screen and (max-width: 800px){
+    #changeStatus form fieldset{
+        margin: 10px;
+    }
+    #changeStatus form fieldset input{
+        margin-top: 10px;
+        flex: 0 0 100%;
+        width:300px;
+        height: 50px;
+        padding: 10px;
+    }
+    #dashboard{
+        margin:10px;
+    }
+    #dashboard ul {
+        display: block;
+    }
+    #dashboard ul li{
+        padding: 10px;
+        border: 1px solid gray;
+        display: inline-block;
+    }
+    #dashboard ul li:hover{
+        cursor: pointer;
+        color:white;
+        background-color:#90103B; 
+    }
+}

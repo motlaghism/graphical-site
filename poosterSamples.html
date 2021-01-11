@@ -1,11 +1,17 @@
+<?php
+session_start();
+require_once "insertdata_panel.php";
+require_once "config_panel.php" ;
+?>
 
 <!DOCTYPE html>
+
 <html>
 
     <head>
-        <title>برای طراحان</title>
+        <title>طراجی پوستر</title>
         <meta charset="utf-8">
-        <link rel="icon" href="../images/demo/Logobar.png"  type="image/icon">
+         <link rel="icon" href="../images/demo/Logobar.png"  type="image/icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
         <link href="../layout/styles/popUpLogin.css" rel="stylesheet" type="text/css" >
@@ -13,13 +19,13 @@
         <link href="../layout/styles/correct1.css" rel="stylesheet" type="text/css" media="all">
         <link href="../layout/styles/footerSamples.css" rel="stylesheet" type="text/css" >
         <link href="../layout/styles/Samples.css" rel="stylesheet" type="text/css" >
-        <link href="../layout/styles/pagination.css" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <link href="../layout/styles/topMenu.css" rel="stylesheet" type="text/css" >
-        <link href="../layout/styles/forRD.css" rel="stylesheet" type="text/css" >
-        <script src="../layout/scripts/popUpLogin.js"></script>
+        <link href="../layout/styles/pagination.css" rel="stylesheet" type="text/css" >
         <script src="../layout/scripts/pagination.js"></script>
+        <link href="../layout/styles/topMenu.css" rel="stylesheet" type="text/css" >
+        <script src="../layout/scripts/popUpLogin.js"></script>
         <script src="../layout/scripts/popUpRequest.js"></script>
+
         <script>
             function myFunction() {
                 var x = document.getElementById("myTopnav");
@@ -55,7 +61,7 @@
                         </li>
                         <li><a class="drop">دسته بندی ها</a>
                             <ul>
-                                <li><a href="../pages/poosterSamples.php">طراحی پوستر</a></li>
+                                <li><a href="../pages/paintSamples.php">طراحی پوستر</a></li>
                                 <li><a href="../pages/logoSamples.php">طراحی لوگو</a></li>
                                 <li><a href="../pages/bannerSamples.php">طراحی بنر</a></li>
                                 <li><a href="../pages/paintSamples.php">دیجیتال پینت</a></li>
@@ -89,68 +95,124 @@
             </section>
 
         </div>
+
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
         <div class="wrapper bgded overlay" style="background-image:url('../images/demo/backgrounds/01.png');">
             <div id="breadcrumb" class="hoc clear">
                 <!-- ################################################################################################ -->
-                <h6 class="heading">برای طراحان</h6>
+                <h6 class="heading">طراحی پوستر</h6>
                 <ul>
-                    <li><a href="#">برای طراحان</a></li>
-                    <li><a href="#">چطور کار میکنه؟</a></li>
+                    <li><a href="#">طراحی پوستر</a></li>
+                    <li><a href="#">دسته بندی ها</a></li>
                     <li><a href="#">خانه</a></li>
                 </ul>
                 <!-- ################################################################################################ -->
             </div>
         </div>
-        <!-- ################################################################################################ -->
-        <!-- ################################################################################################ -->
-        <!-- ################################################################################################ -->
-        <div class="wrapper row3">
-            <main class="hoc container clear">
-                <!-- main body -->
-                <!-- ################################################################################################ -->
-                <div class="content" id="forQD">
-                    <!-- ################################################################################################ -->
-                    <img id="logoFor" class="imgr borderedbox inspace-5" src="../images/demo/thePHOENIX5.png" alt="">
-                    <h1>: سخنی با طراحان</h1>
-                    <p>
-                        سلام و خوش آمد گویی خدمت طراحان عزیز ققنوس
-                        خیلی خوشحالیم که شانس همکاری با شما رو داریم.
-                    </p>
-                    <br/>
-                    <h3>
-                        چطوری میتونید عضوی از خانواده ققنوس باشید؟!؟
-                    </h3>
-                    <p>
-                        اینکار خیلی راحت تر از اون چیزیه که فکرشو میکنید.
+        <div id="mainSample" >
+            <div id="samples">
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
 
-                        طبیعتا اولین قدم عضویت توی سایت یا ورود به حساب کاربریتونه :
-                    </p>
-                    <p>
-                        <button onclick="popUp()" class="btn">بیا ببرمت ثبت نام</button>
-                    </p>
-                    <p>
-                        بعد از اون از طریق بخش همکاری با ققنوس در پنل کاربری خودتون میتونید فرم درخواست همکاری رو پر کنید.
-                        کار سختی نیست 
-                        صرفا یه سری اطلاعات تکمیلی درمورد خودتون ،تواناییاتون و حوزه کاری مورد نظرتون رو وارد میکنید و چند تا از نمونه کارهای قبلیتون رو هم آپلود میکنید .
-                        بعد از تکمیل فرم ، درخواست شما توسط مدیران سایت بررسی میشه و در صورت تایید ، به جمع طراحان گروه ققنوس دیزاینر اضافه میشین.
-                    </p>
-                    <h3>
-                        حالا چطوری باید سفارش بگیرین؟!؟
-                    </h3>
-                    <p>
-                        خیلی راحت
-                        بعد از اضافه شدن به جمع طراحان ققنوس ، بخشی با عنوان "سفارش های آزاد" به پنل کاربری شما اضافه میشه که توی اون میتونین سفارش های آزاد فعال نوی حوزه های کاری خودتون رو ببینین و از بین اونا یکی رو انتخاب کنید.
-                    </p>
-                    <p>
-                        بعد از انتخاب سفارش ، وارد مرحله مذاکره با کارفرمای مربوطه میشید، توی این مرحله در مورد جزییات سفارش مثل زمان انجام ، قیمت و خود طرح مورد نظر مذاکره میکنید. اگه با کارفرما به توافق برسین و هر دو طرف جزییات رو تایید کنید ، کار سفارش شروع میشه ، در غیر اینصورت سفارش به لیست آزاد برمیگرده و شما هم میتونین یه سفارش دیگه رو انتخاب کنین.
-                    </p>
-                    حالا ما فرض میکنیم شما به توافق رسیدین و کار شروع شده
-                    بعد از اتمام کار ، شما طرح رو توی سایت بارگذاری میکنید و کارفرما پیش نمایش اون رو میبینه ، اگه از طرح راضی بود و نیازی به تغییرات بیشتر نبود ، کارفرما هزینه کار رو واریز میکنه و قابلیت دریافت طرح براش فعال میشه و شما هم دستمزد خودتون رو دریافت میکنید.
-                    بعد از این هم میتونید برید سراغ سفارش بعدیتون.
-
-                    <!-- ################################################################################################ -->
                 </div>
-            </main>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+
+                <div class='sample'>
+                    <a class="linkImgSample" 
+                       href="../images/demo/100x100.png"><img class=' imgSample imgover' src="../images/demo/100x100.png"></a>
+
+                </div>
+            </div>
+
+            <div>
+                <nav class="pagination">
+                    <button class="pageButton" id="previous" onclick="previousPage()" ><a href="#">&laquo قبلی</a></button>
+                    <ul id="ulPage">
+
+                    </ul>
+                    <button class="pageButton" id="next" onclick="nextPage()"><a href="#">بعدی&raquo</a></button>
+                </nav>
+            </div>
         </div>
         <div class="wrapper row4">
             <footer id="footer" class="hoc clear">
@@ -198,7 +260,7 @@
                             <legend>پیام به ما</legend>
                             <input class="btmspace-15" type="text"  name="text" value="" placeholder="پیام کوتاه">
                             <input class="btmspace-15" type="text" name="e_mail" value="" placeholder="ایمیل">
-                            <button type="submit" name="submit" value="submit">ارسال</button>
+                            <button type="submit"  name="send" value="submit">ارسال</button>
                         </fieldset>
                     </form>
                 </div>
@@ -274,7 +336,8 @@
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
+
         <!--################################################################################ request-->
     </body>
 </html>

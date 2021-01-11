@@ -1,0 +1,15 @@
+#footerSamples ul li img:hover{
+    box-shadow: 5px 5px 5px #95103B;
+}
+div.one_third form fieldset button{
+    border:2px solid #95103B !important;    
+}
+div.one_third form fieldset button:hover,div.one_third form fieldset button:focus{
+    box-sizing: border-box;
+    background-color: transparent !important;
+    border:2px solid white !important;
+}
+#footerSamples img{
+    width: 100px;
+    height: 100px;
+}
