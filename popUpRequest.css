@@ -1,0 +1,93 @@
+@media screen and (max-width: 800px) {
+    #requestPopUp{
+        width: 100% !important;
+    }
+    #requestPopUp input{
+        text-align: left;
+        width: 100%;
+        border-radius: 25px;
+        color: white;
+        border:1px solid white;
+        background-color: rgba(255,255,255,.1);
+    }
+}
+#maskReq{
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top:0px;
+    display: none;   
+}
+#requestPopUp{
+    padding-top: 40px;
+    position: relative;
+    direction: rtl;
+    width: auto;
+    height: auto;
+    background-color: #90103B;
+    margin: auto ;
+    color: black;
+}
+#requestPopUp {
+    margin-top: 50px;
+    width: 50%;
+}
+#requestPopUp input[type="submit"]{
+    width:50%;
+    border-radius: 25px;
+    background-color: #1161ee;
+    border-color:#1161ee;
+    color: gainsboro; 
+    margin-top: 10px;
+    cursor: pointer;
+}
+#requestPopUp input[type="submit"]:hover{
+    color:white;
+}
+#requestPopUp textarea{
+    padding: 10px;
+    margin: auto;
+    box-sizing: border-box;
+}
+#requestPopUp input,#requestPopUp label{
+    margin: auto;
+
+}
+#requestPopUp label{
+    color: white;
+    padding-right: 10px;
+}
+#requestPopUp input{
+    box-sizing: border-box;
+    text-align: center;
+    width: 50%;
+    border-radius: 25px;
+    color: white;
+    border:1px solid transparent;
+    background-color: rgba(255,255,255,.1);
+}
+.focusInput:focus{
+    border-color: white !important;
+}
+.close{
+    border-radius: 20px !important;
+    border:solid 1px transparent;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top:0px;
+    background-color: transparent;
+    transform: rotate(45deg);
+    color:white;
+    cursor: pointer;
+}
+/*############################################################################# Zeynabi Code
+{
+*/
+
